@@ -44,4 +44,4 @@ TumaGo is a full-stack logistics platform that enables users to book local packa
 This project is licensed under the [MIT License](LICENSE).
 
 **Live API URL**
-[api demo](https://tumago.onrender.com/swagger/)
+[api demo](https://tumagobackend-production.up.railway.app/swagger/)

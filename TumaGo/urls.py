@@ -8,10 +8,8 @@ schema_view = get_schema_view(
    openapi.Info(
       title="TumaGo api",
       default_version='v1',
-      description="API documentation for your project",
-      terms_of_service="https://your-terms.com/",
+      description="Backend api development overview of a food delivering app",
       contact=openapi.Contact(email="brandonkhumz40@gmail.com"),
-      license=openapi.License(name="MIT License"),
    ),
    public=True,
    permission_classes=[permissions.AllowAny],

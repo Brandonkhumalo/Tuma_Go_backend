@@ -10,12 +10,7 @@ from firebase_admin import credentials, initialize_app
         cred = credentials.Certificate(cred_path)
         firebase_admin.initialize_app(cred)'''
 
-# Get JSON string from environment variable
-firebase_creds_json = os.getenv("FIREBASE_CREDENTIALS")
-
-# Parse it
-firebase_creds_dict = json.loads(firebase_creds_json)
-
-# Initialize Firebase Admin SDK
-cred = credentials.Certificate(firebase_creds_dict)
-firebase_admin.initialize_app(cred)
+def initialize_firebase():
+    firebase_creds_json = os.getenv("FIREBASE_CREDENTIALS")
+    cred = credentials.Certificate(json.loads(firebase_creds_json))
+    firebase_admin.initialize_app(cred)

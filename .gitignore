@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment
+**/.env
+venv/
+env/
+*.env
+
+# Django static
+static/
+media/
+
+# Docker
+*.log
+*.pid
+*.db
+*.sqlite3
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Firebase secrets
+TumaGo/firebase/delivery.json

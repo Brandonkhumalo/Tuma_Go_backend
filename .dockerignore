@@ -1,0 +1,27 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore environment/config files
+.env
+.env.*
+
+# Ignore Git stuff
+.git
+.gitignore
+
+# Ignore Docker files you don't want in image
+.dockerignore
+docker-compose.yml
+
+# Ignore OS and IDE clutter
+.DS_Store
+*.swp
+*.log
+.idea/
+.vscode/

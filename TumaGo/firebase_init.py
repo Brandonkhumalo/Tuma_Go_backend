@@ -11,6 +11,8 @@ from firebase_admin import credentials, initialize_app
         firebase_admin.initialize_app(cred)'''
 
 def initialize_firebase():
-    firebase_creds_json = os.getenv("FIREBASE_CREDENTIALS")
-    cred = credentials.Certificate(json.loads(firebase_creds_json))
-    firebase_admin.initialize_app(cred)
+    # Check if Firebase app is already initialized
+    if not firebase_admin._apps:
+        firebase_creds_json = os.getenv("FIREBASE_CREDENTIALS")
+        cred = credentials.Certificate(json.loads(firebase_creds_json))
+        firebase_admin.initialize_app(cred)

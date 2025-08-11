@@ -27,4 +27,4 @@ media/
 Thumbs.db
 
 # Firebase secrets
-TumaGo/firebase/delivery.json
+TumaGo/delivery.json
